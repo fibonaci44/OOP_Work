@@ -3,6 +3,7 @@
 # import the Vehicle class module
 from vehiclePackage.vehicleClass import *
 from vehiclePackage.hybridClass import Hybrid
+from vehiclePackage.drivetrain import drivetrainConfiguration
 
 if __name__ == "__main__":
     # Instantiate an object of type Vehicle
@@ -16,3 +17,6 @@ if __name__ == "__main__":
     # Instantiate an object of type Hybrid
     myPrius = Hybrid("Car", "Toyota", "Prius", 222)
     print(myPrius.printModel())
+    
+    carDrivetrain = drivetrainConfiguration("Car", "Toyota", "Prius", "front-wheel")
+    print(carDrivetrain.printModel())
