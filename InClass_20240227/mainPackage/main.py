@@ -21,7 +21,6 @@ if __name__ == "__main__":
     myPrius = Hybrid("Car", "Toyota", "Prius", 222)
     print(myPrius.printModel())
     
-
     carDrivetrain = drivetrainConfiguration("Car", "Toyota", "Prius", "front-wheel")
     print(carDrivetrain.printModel())
 
