@@ -3,6 +3,7 @@
 # import the Vehicle class module
 from vehiclePackage.vehicleClass import *
 from vehiclePackage.hybridClass import Hybrid
+from vehiclePackage.drivetrain import drivetrainConfiguration
 
 from vehiclePackage.fastCarClass import *
 from vehiclePackage.engineClass import Engine
@@ -20,8 +21,13 @@ if __name__ == "__main__":
     myPrius = Hybrid("Car", "Toyota", "Prius", 222)
     print(myPrius.printModel())
     
+
+    carDrivetrain = drivetrainConfiguration("Car", "Toyota", "Prius", "front-wheel")
+    print(carDrivetrain.printModel())
+
     #a really fast car
     myFastPrius = fastCar("Car", "Cruz", 100000)
     print(myFastPrius.printModel())
     myCar = Engine("Sports", 5.0)
     print(myCar.printModel())
+
